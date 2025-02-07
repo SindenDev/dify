@@ -1,0 +1,42 @@
+identity: # 工具供应商的基本信息
+  author: Sinden # 作者
+  name: andleoht # 名称，唯一，不允许和其他供应商重名
+  label: # 标签，用于前端展示
+    en_US: Andleoht # 英文标签
+    zh_Hans: 和光数字 # 中文标签
+  description: # 描述，用于前端展示
+    en_US: Andleoht https://www.andleoht.com
+    zh_Hans: 和光数字 https://www.andleoht.com
+  icon: logo.png # 图标，需要放置在当前模块的_assets文件夹下
+  tags: # 标签，用于前端展示
+    - productivity
+
+credentials_for_provider:
+  xfyun_app_id:
+    type: text-input
+    required: true
+    label:
+      en_US: APP ID
+    placeholder:
+      en_US: Please input your xfyun app id
+      zh_Hans: 请输入你的科大讯飞 app id
+    help:
+      en_US: Get your app_id and app_secret from xfyun
+      zh_Hans: 科大讯飞 app_id 和 api_secret api_key
+    url: https://console.xfyun.cn/services/iat
+  xfyun_api_secret:
+    type: secret-input
+    required: true
+    label:
+      en_US: API Secret
+    placeholder:
+      en_US: Please input your api secret
+      zh_Hans: 请输入你的科大讯飞 api secret
+  xfyun_api_key:
+    type: secret-input
+    required: true
+    label:
+      en_US: API Key
+    placeholder:
+      en_US: Please input your api key
+      zh_Hans: 请输入你的科大讯飞 api key

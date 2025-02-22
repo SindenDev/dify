@@ -135,6 +135,7 @@ const translation = {
     newApp: '建立應用',
     newDataset: '建立知識庫',
     tools: '工具',
+    qinglong: '青龙',
   },
   userProfile: {
     settings: '設定',

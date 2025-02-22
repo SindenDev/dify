@@ -12,6 +12,7 @@ import DatasetNav from './dataset-nav'
 import EnvNav from './env-nav'
 import ExploreNav from './explore-nav'
 import ToolsNav from './tools-nav'
+import QinglongNav from './qinglong-nav'
 import GithubStar from './github-star'
 import LicenseNav from './license-env'
 import { WorkspaceProvider } from '@/context/workspace-context'
@@ -79,6 +80,7 @@ const Header = () => {
           {!isCurrentWorkspaceDatasetOperator && <AppNav />}
           {(isCurrentWorkspaceEditor || isCurrentWorkspaceDatasetOperator) && <DatasetNav />}
           {!isCurrentWorkspaceDatasetOperator && <ToolsNav className={navClassName} />}
+          <QinglongNav className={navClassName} />
         </div>
       )}
       <div className='flex items-center flex-shrink-0'>
@@ -99,6 +101,7 @@ const Header = () => {
           {!isCurrentWorkspaceDatasetOperator && <AppNav />}
           {(isCurrentWorkspaceEditor || isCurrentWorkspaceDatasetOperator) && <DatasetNav />}
           {!isCurrentWorkspaceDatasetOperator && <ToolsNav className={navClassName} />}
+          <QinglongNav className={navClassName} />
         </div>
       )}
     </div>

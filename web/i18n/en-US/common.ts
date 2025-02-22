@@ -139,6 +139,7 @@ const translation = {
     newApp: 'New App',
     newDataset: 'Create Knowledge',
     tools: 'Tools',
+    qinglong: 'Qinglong',
   },
   userProfile: {
     settings: 'Settings',
